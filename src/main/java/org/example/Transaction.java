@@ -1,36 +1,61 @@
 package org.example;
 
 import java.io.BufferedOutputStream;
-import java.io.IOException;
 import java.time.LocalDate;
 import java.time.LocalTime;
-
-import static org.example.MainLedger.scanner;
+import java.time.format.DateTimeFormatter;
 
 public class Transaction {
     // give it all the properties of a transaction (like in the file)
-    static LocalDate ld;
-    static LocalTime lt;
-    static String item = scanner.nextLine();
-    static double item_price = scanner.nextDouble();
+    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
     private LocalDate date;
     private LocalTime time;
-    private double price;
-    private BufferedOutputStream inventoryFilePath;
+    private double amount;
+    private String vendor;
+    private String description;
+
+    Transaction(String description, String vendor, double price) {
+        date = LocalDate.now();
+        time = LocalTime.now();
+        this.amount = price;
+        this.description = description;
+        this.vendor = vendor;
+    }
+
+    Transaction(String line) {
+        String[] fields = line.split("\\|"); // googled this, need \\ for it to split properly
+        date = LocalDate.parse(fields[0]);
+        time = LocalTime.parse(fields[1], formatter);
+        description = fields[2];
+        vendor = fields[3];
+        amount = Double.parseDouble(fields[4]);
+    }
 
 
-    // give it a special method that returns a string
-    // that string should match the format (with the pipes) in the assignment
-    public String toFileString(String item) {
-        this.date = ld;
-        this.time = lt;
-        Transaction.item = scanner.nextLine();
-        this.price = item_price;
-        try {
-            inventoryFilePath.write(Integer.parseInt(ld + "|" + lt + "|" + scanner.next() + "|" + scanner.nextDouble()));
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        return ld + " | " + lt + " | " + item + " | " + item_price; // not sure if we need to input inventory.csv
+    @Override
+    public String toString() {
+        // TODO(Sarah): Use a StringBuilder here
+        return date + "|" + time.format(formatter) + "|" + description + "|" + vendor + "|" + amount;
+    }
+
+
+    public LocalDate getDate() {
+        return date;
+    }
+
+    public LocalTime getTime() {
+        return time;
+    }
+
+    public double getAmount() {
+        return amount;
+    }
+
+    public String getVendor() {
+        return vendor;
+    }
+
+    public String getDescription() {
+        return description;
     }
 }
