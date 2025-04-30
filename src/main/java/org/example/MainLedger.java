@@ -1,176 +1,138 @@
 package org.example;
 
 import java.io.*;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
+
 public class MainLedger {
-    static Scanner user_input = new Scanner(System.in);
-    static double userCheckingBalance = 2563.04;
-    static double userSavingsBalance = 16304.67;
     static FileWriter fr;
+    static BufferedReader br;
+    static Scanner scanner = new Scanner(System.in);
+    static LocalDate ld = LocalDate.now();
+    static LocalTime lt = LocalTime.now();
+    static DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH-mm");
+    static String formattedTime = lt.format(formatter);
+    static File inventoryLedger = new File("practice.csv"); //pathway to file
 
-    public static void main(String[] args) {
-        mainMenu();
-    }
-
-    public static void mainMenu() {
-        System.out.println(
-                "Hello, what would you like to do? \n1. Make Deposit \n2. Make Payment \n3. View Ledger \n4. Exit"); // consider adding a way for the greeting to say good morning based on time of day
-        int userMainMenuChoice = user_input.nextInt();
-        if (userMainMenuChoice == 1) {
-            addDeposit();
-        } else if (userMainMenuChoice == 2) {
-            makePayment();
-        } else if (userMainMenuChoice == 3) {
-            viewLedger();
-        } else if (userMainMenuChoice == 4) {
-            System.out.println("Goodbye, have a wonderful day!");
-        } else {
-            System.out.println("Error");
-        }
-    }
-
-    // Methods
-    // Add deposit
-    // Make payment, pay bills
-    // Ledger
-    // Exit
-
-    //create the ledger file to view, add transactions and deposits
-    // create a way to exit to main menu
-
-    public static void addDeposit() {
-        System.out.println("Which account would you like to deposit to? \n1. Checking \n2. Savings \n3. Exit to main menu");
-        int userAccountChoice = user_input.nextInt();
-        if (userAccountChoice == 1) {
-            addDepositToChecking();// depositing to checking
-        } else if (userAccountChoice == 2) { // Savings Account
-            addDepositToSavings();
-        } else if (userAccountChoice == 3) {
-            mainMenu();
-        }
+    public static void main(String[] args) throws IOException {
+        homeScreen();
     }
 
 
-    public static void addDepositToSavings() {
-        System.out.println("Please enter the amount you would like to deposit: ");
-        double userSavingsDeposit = user_input.nextDouble();
-        System.out.println(
-                "Confirm the amount you are depositing: "
-                        + userSavingsDeposit
-                        + "\nIs this correct? \n1. Yes \n2. No"); // deposit confirmation
-        int userConfirmationChoice = user_input.nextInt();
-        if (userConfirmationChoice == 1) {
-            System.out.println(
-                    "Deposit success. Would you like to view your current balance? \n1. Yes \n2. Exit");
-            int userEndDepositChoice = user_input.nextInt();
-            if (userEndDepositChoice == 1) {
-                System.out.println("Your savings account balance is: $" + userSavingsBalance);
-                mainMenu();
-            } else if (userEndDepositChoice == 2) {
-                mainMenu();
+    public static void homeScreen() throws IOException {
+        boolean continueApp = true;
+        while (continueApp) {
+            System.out.println("Hello, please select from the following options:\n----------------\nD) Add Deposit\nP) Make Payment\nL) Ledger\nX) Exit");
+            String user_choice = scanner.next().toLowerCase();
+            switch (user_choice) {
+                case "d":
+                    makeDeposit();
+                    break;
+                case "p":
+                    makePayment();
+                    break;
+                case "l":
+                    readLedger();
+                    break;
+                case "x":
+                    continueApp = false;
+                    break;
+                default:
+                    System.out.println("Invalid input. Please try again.");
+                    break;
             }
-        } else if (userConfirmationChoice == 2) { // if deposit was incorrect, go back to line 73
-            addDepositToSavings();
         }
     }
 
-    public static void addDepositToChecking() {
-        System.out.println("Please enter the amount you would like to deposit:");
-        double userCheckingDeposit = user_input.nextDouble();
-        System.out.println(
-                "Confirm the amount you are depositing: "
-                        + userCheckingDeposit
-                        + "\nIs this correct?\n1. Yes \n2. No"); // deposit confirmation
-        int userConfirmationChoice = user_input.nextInt();
-        if (userConfirmationChoice == 1) {
-            System.out.println(
-                    "Deposit success. Would you like to view your current balance? \n1. Yes \n2. Exit");
-            int userEndDepositChoice = user_input.nextInt();
-            if (userEndDepositChoice == 1) {
-                System.out.println("Your checking account balance is: $" + userCheckingBalance);
-                mainMenu();
+    public static void readLedger() throws IOException {
+        try {
+            br = new BufferedReader(new FileReader(inventoryLedger));
+        } catch (FileNotFoundException e) {
+            System.out.println("Error loading Reader!");
+            throw new RuntimeException(e);
+        }
+        try {
+            String line;
+            while ((line = br.readLine()) != null) {
+                System.out.println(line);
+            }
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        br.close();
+    }
+
+
+    // TODO(Sarah): Copy this and make other functions for makePayments with their corresponding messages.
+    public static void makeDeposit() throws IOException {
+
+        try {
+            // if file exits, add to it, if not, create new
+            if (inventoryLedger.exists()) {
+                fr = new FileWriter(inventoryLedger, true);
             } else {
-                mainMenu();
+                fr = new FileWriter(inventoryLedger);
             }
-        } else if (userConfirmationChoice == 2) {
-            addDepositToChecking();
+        } catch (IOException e) {
+            System.out.print("Error loading Ledger!");
+            throw new RuntimeException(e);
+        }
+
+        boolean addToLedger = true;
+        while (addToLedger) {
+            addDepositToLedger();
+            System.out.println("Would you like to make another deposit?\n1. Yes\nAny other key: Exit to main menu");
+            int user_choice = scanner.nextInt();
+            scanner.nextLine();
+            if (user_choice != 1) {
+                addToLedger = false;
+                System.out.println("Returning to main menu.");
+            }
+        }
+        if (fr != null) {
+            fr.close();
+        }
+    }
+
+    public static void addDepositToLedger() {
+        double deposit = 0; //placeholder variable so it can be within scope
+        int user_confirmation = 0;
+        String user_account = scanner.nextLine();
+        System.out.println("Enter the amount you wish to deposit: ");
+        deposit = scanner.nextDouble();
+        scanner.nextLine(); //added consume line as advised
+
+        System.out.println("Press 1 to confirm the deposit of $" + deposit + ", press any other key to cancel.");
+        user_confirmation = scanner.nextInt();
+        scanner.nextLine(); //added this block of text as advised
+
+        if (user_confirmation == 1) {
+            System.out.println("Add a description for the deposit: ");
+            String deposit_desc = scanner.nextLine();
+            System.out.println("Please enter the vendor/person name: ");
+            user_account = scanner.nextLine();
+            try {
+                String formattedTime = lt.format(formatter);
+                // TODO(Sarah): Use a StringBuilder here
+                fr.append(ld + "|" + formattedTime + "|" + deposit_desc + "|" + user_account + "|" + deposit + "\n");
+                System.out.println("Deposit Information: " + ld + "|" + formattedTime + "|" + deposit_desc + "|" + user_account + "|" + deposit);
+            } catch (IOException e) {
+                System.out.println("Error: " + e.getMessage());
+            }
+        } else if (user_confirmation == 2) {
+            System.out.println("Deposit cancelled");
         }
     }
 
     public static void makePayment() {
-        System.out.println(
-                "Please select the account in which to make a payment: \n1. Credit Card \n2. Car Payment \n3. Exit");
-        int user_acc_select = user_input.nextInt();
-
-        if (user_acc_select == 1) { // CC payment
-            makeCCBillPayment();
-        } else if (user_acc_select == 2) { // Car Payment
-            makeCarPayment();
-        } else if (user_acc_select == 3) { // Main Menu
-            mainMenu();
-        }
-    }
-
-    public static void makeCCBillPayment() {
-        double creditCardBill = 206.74;
-        System.out.println("Please enter the payment amount: ");
-        double user_payment_CC = user_input.nextDouble();
-        System.out.println(
-                "Confirm the amount you are depositing: "
-                        + user_payment_CC
-                        + "\nIs this correct?\n1. Yes \n2. No"); // deposit confirmation
-        int user_payment_confirmation = user_input.nextInt();
-        if (user_payment_confirmation == 1) {
-            System.out.println("Remaining Balance: $" + (creditCardBill - user_payment_CC));
-            mainMenu(); // add way to round to the nearest 100th decimal
-        } else if (user_payment_confirmation == 2) {
-            makeCCBillPayment();
-        } else {
-            mainMenu();
-        }
-    }
-
-    public static void makeCarPayment() {
-        double carPayment = 8035.43;
-        System.out.println("Please enter the payment amount: ");
-        double user_payment_CP = user_input.nextDouble();
-        System.out.println(
-                "Confirm the amount you are depositing: "
-                        + user_payment_CP
-                        + "\nIs this correct?\n1. Yes \n2. No"); // deposit confirmation
-        int user_payment_confirmation = user_input.nextInt();
-        if (user_payment_confirmation == 1) {
-            System.out.println("Remaining Balance: $" + (carPayment - user_payment_CP));
-            mainMenu();
-        } else if (user_payment_confirmation == 2) {
-            makeCarPayment();
-        } else {
-            mainMenu();
-        }
-
-    }
-
-    public static void viewLedger() {
-        System.out.println("Which account ledger would you like to view? \n1. Checking \n2. Savings \n3. Exit to Main Menu");
-        int viewLedgerChoice = user_input.nextInt();
-        if (viewLedgerChoice == 1) {
-            //input file reader for checking ledger
-            System.out.println(
-                    "Your balance is: $"
-                            + userCheckingBalance
-                            + "\nWhat would you like to do? \n1. View Another Ledger \n2. Exit");
-        } else if (viewLedgerChoice == 2) {
-            //input file reader for savings ledger
-            System.out.println(
-                    "Your balance is: $"
-                            + userSavingsBalance
-                            + "\nWhat would you like to do? \n1. View Another Ledger \n2. Exit");
-        } else if (viewLedgerChoice == 3) {
-            mainMenu();
-        }
     }
 }
+
 
 
 
