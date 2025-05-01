@@ -23,7 +23,7 @@ public class Transaction {
     }
 
     Transaction(String line) {
-        String[] fields = line.split("\\|"); // googled this, need \\ for it to split properly
+        String[] fields = line.split("\\|"); //need \\ for it to split properly
         date = LocalDate.parse(fields[0]);
         time = LocalTime.parse(fields[1], formatter);
         description = fields[2];
@@ -35,7 +35,8 @@ public class Transaction {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append(date)
+        sb.append("\n")
+                .append(date)
                 .append("|")
                 .append(time.format(formatter))
                 .append("|")

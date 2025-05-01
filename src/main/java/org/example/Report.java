@@ -3,7 +3,49 @@ package org.example;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
+
+import static org.example.Ledger.scanner;
+
+
 public class Report {
+
+    public static void reportsMenu(ArrayList<Transaction> transactions) throws IllegalStateException {
+        boolean continueApp = true;
+        while (continueApp) {
+            System.out.println("Please select a report to view:\n-------------------\n1) Month to Date\n2) Previous Month\n3) Year to Date\n4) Previous Year\n5) Search by Vendor\n6) Custom Search\nH) Home");
+            String user_menu_select = scanner.next().toLowerCase();
+            switch (user_menu_select) {
+                case "1":
+                    byMonthToDate(transactions);
+                    break;
+                case "2":
+                    byPreviousMonth(transactions);
+                    break;
+                case "3":
+                    byYearToDate(transactions);
+                    break;
+                case "4":
+                    byPreviousYear(transactions);
+                    break;
+                case "5":
+                    System.out.println("Please enter the vendor you wish to search by: ");
+                    String vendor = scanner.next();
+                    byVendor(transactions, vendor);
+                    break;
+                case "6":
+                    //custom search option
+                case "h":
+                    //return to homeScreen()
+                    continueApp = false;
+                    break;
+                default:
+                    System.out.println("Invalid input. Please try again.");
+                    break;
+//                    throw new IllegalStateException("Unexpected value: " + user_menu_select);
+
+            }
+        }
+    }
 
     public static void byMonthToDate(ArrayList<Transaction> transactions) {
         ArrayList<Transaction> monthToDateTransactions = new ArrayList<>();
@@ -32,7 +74,6 @@ public class Report {
                 previousMonthTransactions.add(transactions.get(i));
             }
         }
-
         printTransactions(previousMonthTransactions);
     }
 
@@ -69,13 +110,11 @@ public class Report {
 
     public static void byVendor(ArrayList<Transaction> transactions, String vendor) {
         ArrayList<Transaction> transactionsByVendors = new ArrayList<>();
-
         for (int i = 0; i < transactions.size(); i++) {
-            if (transactions.get(i).getVendor().equals(vendor)) {
+            if (transactions.get(i).getVendor().equalsIgnoreCase(vendor)) {
                 transactionsByVendors.add(transactions.get(i));
             }
         }
-
         printTransactions(transactionsByVendors);
     }
 
