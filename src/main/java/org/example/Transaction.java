@@ -34,8 +34,17 @@ public class Transaction {
 
     @Override
     public String toString() {
-        // TODO(Sarah): Use a StringBuilder here
-        return date + "|" + time.format(formatter) + "|" + description + "|" + vendor + "|" + amount;
+        StringBuilder sb = new StringBuilder();
+        sb.append(date)
+                .append("|")
+                .append(time.format(formatter))
+                .append("|")
+                .append(description)
+                .append("|")
+                .append(vendor)
+                .append("|")
+                .append(amount);
+        return sb.toString();
     }
 
 
