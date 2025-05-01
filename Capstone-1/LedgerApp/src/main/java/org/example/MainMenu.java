@@ -1,0 +1,47 @@
+package org.example;
+
+import java.io.*;
+import java.util.Scanner;
+
+import static org.example.Ledger.ledgerMenuScreen;
+
+
+public class MainMenu {
+    static Scanner scanner = new Scanner(System.in);
+    static String fileName = "inventory.csv";
+
+    public static void main(String[] args) throws IOException {
+        homeScreen();
+    }
+
+    public static void homeScreen() throws IOException {
+        boolean continueApp = true;
+        while (continueApp) {
+            System.out.println("Hello, please select from the following options:\n----------------\nD) Add Deposit\nP) Make Payment(Debit)\nL) Ledger\nX) Exit\n");
+            String user_choice = scanner.next().toLowerCase();
+            switch (user_choice) {
+                case "d":
+                    Ledger.makeDeposit(fileName);
+                    break;
+                case "p":
+                    Ledger.makePayment(fileName);
+                    break;
+                case "l":
+                    ledgerMenuScreen();
+                    break;
+                case "x":
+                    continueApp = false;
+                    break;
+                default:
+                    System.out.println("Invalid input. Please try again.");
+                    break;
+            }
+        }
+    }
+
+
+}
+
+
+
+
