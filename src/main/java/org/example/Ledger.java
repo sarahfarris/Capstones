@@ -91,7 +91,8 @@ public class Ledger {
         }
         fw.close();
     }
-// this method works with makePayment by adding it to the file
+
+    // this method works with makePayment by adding it to the file
     public static void addPaymentTransactionToLedger(FileWriter fw) {
         System.out.println("Enter the amount you wish to pay: ");
         double payment = scanner.nextDouble();
@@ -119,30 +120,29 @@ public class Ledger {
     }
 
 
-// TODO(Sarah): In main menu, option Ledger needs to have another menu as described by the assignment
+    // TODO(Sarah): In main menu, option Ledger needs to have another menu as described by the assignment
 // A - readFullLedger
 // D - readDepositsInLedger
 // P - readPaymentsInLedger (you will have to implement this, it will be very similar to readDepositsInLedger but just negative)
 // R - createReports (just create a new function with all the menu options and we can work on it tomorrow) -- Do this at last
 // H - just leaving the while loop (how we did in Main Menu)
-public static void viewLedger(String fileName) { // add ledeger MenuScreen within viewLedger()
-    ArrayList<Transaction> transactions = new ArrayList<>();
-    try {
-        BufferedReader br = new BufferedReader(new FileReader(fileName));
-        String line;
-        while ((line = br.readLine()) != null) {
-            Transaction transaction = new Transaction(line);
-            transactions.addFirst(transaction);
+    public static void viewLedger(String fileName) { // add ledeger MenuScreen within viewLedger()
+        ArrayList<Transaction> transactions = new ArrayList<>();
+        try {
+            BufferedReader br = new BufferedReader(new FileReader(fileName));
+            String line;
+            while ((line = br.readLine()) != null) {
+                Transaction transaction = new Transaction(line);
+                transactions.addFirst(transaction);
+            }
+        } catch (IOException e) {
+            System.out.println("Error!");
+            throw new RuntimeException(e);
         }
-    } catch (IOException e) {
-        System.out.println("Error!");
-        throw new RuntimeException(e);
     }
-}
 
-
-    public static void readFullLedger(String fileName) {
-       ArrayList<Transaction> transactions = new ArrayList<>();
+    public static ArrayList<Transaction> getAllTransactionsFromLedger(String fileName) {
+        ArrayList<Transaction> transactions = new ArrayList<>();
         try {
             BufferedReader br = new BufferedReader(new FileReader(fileName));
             String line;
@@ -155,10 +155,15 @@ public static void viewLedger(String fileName) { // add ledeger MenuScreen withi
             System.out.println("Error!");
             throw new RuntimeException(e);
         }
-        printTransactions(transactions);
+        return transactions;
     }
 
-    public static void readDepositsInLedger (String fileName){
+
+    public static void readFullLedger(String fileName) {
+        printTransactions(getAllTransactionsFromLedger(fileName));
+    }
+
+    public static void readDepositsInLedger(String fileName) {
         ArrayList<Transaction> transactions = new ArrayList<>();
         try {
             BufferedReader br = new BufferedReader(new FileReader(fileName));
@@ -179,27 +184,27 @@ public static void viewLedger(String fileName) { // add ledeger MenuScreen withi
     }
 
     public static void readPaymentsInLedger(String fileName) {
-            ArrayList<Transaction> transactions = new ArrayList<>();
-            try {
-                BufferedReader br = new BufferedReader(new FileReader(fileName));
-                String line;
-                while ((line = br.readLine()) != null) {
-                    Transaction transaction = new Transaction(line);
-                    // For readPaymentsInLedger, you will check if the amount is negative (i.e. < 0)
-                    if (transaction.getAmount() <= 0) { // switched >= to <= to check if the amount it negative
-                        transactions.addFirst(transaction);
-                    }
+        ArrayList<Transaction> transactions = new ArrayList<>();
+        try {
+            BufferedReader br = new BufferedReader(new FileReader(fileName));
+            String line;
+            while ((line = br.readLine()) != null) {
+                Transaction transaction = new Transaction(line);
+                // For readPaymentsInLedger, you will check if the amount is negative (i.e. < 0)
+                if (transaction.getAmount() <= 0) { // switched >= to <= to check if the amount it negative
+                    transactions.addFirst(transaction);
                 }
-                br.close();
-            } catch (IOException e) {
-                System.out.println("Error!");
-                throw new RuntimeException(e);
             }
-        printTransactions(transactions); //this code wasn't working, was red
+            br.close();
+        } catch (IOException e) {
+            System.out.println("Error!");
+            throw new RuntimeException(e);
         }
+        printTransactions(transactions); //this code wasn't working, was red
+    }
 
 
-    public static void printTransactions(ArrayList<Transaction> transactions) {
+    private static void printTransactions(ArrayList<Transaction> transactions) {
         if (transactions.isEmpty()) {
             System.out.println("No transactions found!");
             return;
@@ -214,13 +219,13 @@ public static void viewLedger(String fileName) { // add ledeger MenuScreen withi
         String searchBy = scanner.nextLine();
         if (searchBy.equals("date")) {
             System.out.println();
-        } else if (searchBy.equals("time")){
+        } else if (searchBy.equals("time")) {
 
-        } else if (searchBy.equals("description")){
+        } else if (searchBy.equals("description")) {
 
-        } else if (searchBy.equals("vendor")){
+        } else if (searchBy.equals("vendor")) {
 
-        }else if (searchBy.equals("amount")){
+        } else if (searchBy.equals("amount")) {
 
         }
 
