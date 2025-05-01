@@ -8,7 +8,7 @@ import static org.example.Ledger.ledgerMenuScreen;
 
 public class MainMenu {
     static Scanner scanner = new Scanner(System.in);
-    static String fileName = "inventory.csv";
+    static String fileName = "src/main/resources/transactions.csv";
 
     public static void main(String[] args) throws IOException {
         homeScreen();
