@@ -41,8 +41,6 @@ public class Report {
                 default:
                     System.out.println("Invalid input. Please try again.");
                     break;
-//                    throw new IllegalStateException("Unexpected value: " + user_menu_select);
-
             }
         }
     }
@@ -110,11 +108,13 @@ public class Report {
 
     public static void byVendor(ArrayList<Transaction> transactions, String vendor) {
         ArrayList<Transaction> transactionsByVendors = new ArrayList<>();
+
         for (int i = 0; i < transactions.size(); i++) {
             if (transactions.get(i).getVendor().equalsIgnoreCase(vendor)) {
                 transactionsByVendors.add(transactions.get(i));
             }
         }
+
         printTransactions(transactionsByVendors);
     }
 
@@ -124,6 +124,7 @@ public class Report {
             return;
         }
         System.out.println("date|time|description|vendor|amount");
+
         for (int i = 0; i < transactions.size(); i++) {
             System.out.println(transactions.get(i));
         }
