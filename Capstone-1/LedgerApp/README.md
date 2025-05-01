@@ -1,2 +1,0 @@
-# Capstones
-Capstones for LTCA
