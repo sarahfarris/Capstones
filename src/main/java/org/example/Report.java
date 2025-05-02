@@ -1,12 +1,10 @@
 package org.example;
 
-import java.io.IOException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
 
 import static org.example.Ledger.scanner;
-import static org.example.MainMenu.homeScreen;
 
 
 public class Report {
@@ -55,7 +53,6 @@ public class Report {
                 monthToDateTransactions.add(transactions.get(i));
             }
         }
-
         printTransactions(monthToDateTransactions);
     }
 
@@ -113,7 +110,6 @@ public class Report {
                 transactionsByVendors.add(transactions.get(i));
             }
         }
-
         printTransactions(transactionsByVendors);
     }
 

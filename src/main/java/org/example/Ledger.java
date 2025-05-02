@@ -25,7 +25,6 @@ public class Ledger {
                     Ledger.readPaymentsInLedger(fileName);
                     break;
                 case "r":
-                    Ledger.createReports(fileName);
                     Report.reportsMenu(getAllTransactionsFromLedger(fileName));//added this to call reports from ledger
                     break;
                 case "h":
@@ -209,22 +208,6 @@ public class Ledger {
         for (int i = 0; i < transactions.size(); i++) {
             System.out.println(transactions.get(i));
         }
-    }
-
-    public static void createReports(String fileName) {
-        String searchBy = scanner.nextLine();
-        if (searchBy.equals("date")) {
-            System.out.println();
-        } else if (searchBy.equals("time")) {
-
-        } else if (searchBy.equals("description")) {
-
-        } else if (searchBy.equals("vendor")) {
-
-        } else if (searchBy.equals("amount")) {
-
-        }
-
     }
 }
 
