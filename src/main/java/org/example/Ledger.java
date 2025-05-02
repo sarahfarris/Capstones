@@ -141,22 +141,6 @@ public class Ledger {
         }
     }
 
-    public static void viewLedger(String fileName) {
-        ArrayList<Transaction> transactions = new ArrayList<>();
-        try {
-            BufferedReader br = new BufferedReader(new FileReader(fileName));
-            String line;
-            while ((line = br.readLine()) != null) {
-                Transaction transaction = new Transaction(line);
-                transactions.addFirst(transaction);
-            }
-        } catch (IOException e) {
-            System.out.println("Error!");
-            throw new RuntimeException(e);
-        }
-        ledgerMenuScreen();
-    }
-
     public static ArrayList<Transaction> getAllTransactionsFromLedger(String fileName) {
         ArrayList<Transaction> transactions = new ArrayList<>();
         try {
@@ -173,7 +157,6 @@ public class Ledger {
         }
         return transactions;
     }
-
 
     public static void readFullLedger(String fileName) {
         printTransactions(getAllTransactionsFromLedger(fileName));
@@ -216,7 +199,6 @@ public class Ledger {
         }
         printTransactions(transactions);
     }
-
 
     private static void printTransactions(ArrayList<Transaction> transactions) {
         if (transactions.isEmpty()) {
