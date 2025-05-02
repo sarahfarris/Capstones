@@ -30,7 +30,7 @@ public class Report {
                 case "5":
                     System.out.println("Please enter the vendor you wish to search by: ");
                     String vendor = scanner.next();
-                    byVendor(transactions, vendor);
+                    byVendor(transactions, vendor.toLowerCase());
                     break;
                 case "0":
                     continueApp = false;
