@@ -29,6 +29,9 @@
 3. When finished with a selection, there is a return to Home Screen option on every screen
 4. To generate a report, from the Home Screen select L) View Ledger, then R) to see the report options
 
+![Leder_App_Demo_Ledger-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/df7355c6-cf91-45f1-957a-3f17910e89f7)
+
+
 ![Ledger_App_Demo_Reports-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/17f917f1-fc9c-4e68-b88e-9b589b376e89)
 
 
