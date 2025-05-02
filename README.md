@@ -7,7 +7,7 @@
 
 1. Description
 2. Installation Guide
-3. How to Use (include gifs like the preview)
+3. How to Use 
 4. Breakdown of Code 
 5. Acknowledgments
 
