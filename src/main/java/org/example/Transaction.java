@@ -6,7 +6,6 @@ import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
 public class Transaction {
-    // give it all the properties of a transaction (like in the file)
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
     private LocalDate date;
     private LocalTime time;

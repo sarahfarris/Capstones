@@ -14,7 +14,7 @@ public class Report {
     public static void reportsMenu(ArrayList<Transaction> transactions) throws IllegalStateException {
         boolean continueApp = true;
         while (continueApp) {
-            System.out.println("Please select a report to view:\n-------------------\n1) Month to Date\n2) Previous Month\n3) Year to Date\n4) Previous Year\n5) Search by Vendor\nH) Home");
+            System.out.println("Please select a report to view:\n-------------------\n1) Month to Date\n2) Previous Month\n3) Year to Date\n4) Previous Year\n5) Search by Vendor\n0) Back");
             String user_menu_select = scanner.next().toLowerCase();
             switch (user_menu_select) {
                 case "1":
@@ -34,12 +34,7 @@ public class Report {
                     String vendor = scanner.next();
                     byVendor(transactions, vendor);
                     break;
-                case "h":
-                    try {
-                        homeScreen();
-                    } catch (IOException e) {
-                        throw new RuntimeException(e);
-                    }
+                case "0":
                     continueApp = false;
                     break;
                 default:

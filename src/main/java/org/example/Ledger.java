@@ -2,15 +2,12 @@ package org.example;
 
 import java.io.*;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 import static org.example.MainMenu.fileName;
 
 public class Ledger {
     static Scanner scanner = new Scanner(System.in);
-
-
 
     public static void ledgerMenuScreen() {
         boolean continueApp = true;
@@ -32,7 +29,6 @@ public class Ledger {
                     Report.reportsMenu(getAllTransactionsFromLedger(fileName));//added this to call reports from ledger
                     break;
                 case "h":
-                    System.out.println("Exiting...");
                     continueApp = false;
                     break;
             }
@@ -168,7 +164,7 @@ public class Ledger {
             String line;
             while ((line = br.readLine()) != null) {
                 Transaction transaction = new Transaction(line);
-                transactions.addFirst(transaction);
+                transactions.addFirst(transaction);//adds newest entries to top of file
             }
             br.close();
         } catch (IOException e) {

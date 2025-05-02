@@ -30,6 +30,7 @@ public class MainMenu {
                     ledgerMenuScreen();
                     break;
                 case "x":
+                    System.out.println("Exiting...");
                     continueApp = false;
                     break;
                 default:
