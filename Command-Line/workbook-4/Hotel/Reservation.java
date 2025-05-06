@@ -1,3 +1,5 @@
+package Hotel;
+
 public class Reservation {
   int nrOfNights;
   double pricePerNight;

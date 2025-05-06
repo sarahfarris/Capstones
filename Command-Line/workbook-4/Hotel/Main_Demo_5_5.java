@@ -1,3 +1,5 @@
+package Hotel;
+
 public class Main_Demo_5_5 {
 
 
