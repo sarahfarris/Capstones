@@ -1,20 +1,29 @@
 public class Employee {
 
-    double totalPay;
+
     double regularHours;
     double overtimeHours;
+    double payRate;
+    double totalPay;
 
-
-    Employee (double totalPay, double regularHours, double overtimeHours) {
-        this.totalPay = totalPay;
+    // this is the constructor
+    Employee (double regularHours, double overtimeHours, double payRate) {
+        this.payRate = payRate;
         this.regularHours = regularHours;
         this.overtimeHours = overtimeHours;
+
     }
 
 
     public double getTotalPay() {
-        return totalPay;
+        this.totalPay = (payRate * regularHours) + (payRate * overtimeHours);
+        return (payRate * regularHours) + (payRate * overtimeHours);
     }
+
+    public void setTotalPay(double totalPay) {
+        this.totalPay = totalPay;
+    }
+
     public double getRegularHours() {
         return regularHours;
     }

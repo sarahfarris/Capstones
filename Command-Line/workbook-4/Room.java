@@ -13,8 +13,6 @@ public class Room {
         this.available = available;
 
     }
-
-
     public int getNumberOfBeds() {
         this.numberOfBeds = numberOfBeds;
         return numberOfBeds;
@@ -32,7 +30,11 @@ public class Room {
         return dirty;
     }
     public boolean isAvailable() {
-        this.available = available;
+        if (isDirty() || isOccupied()) {
+            available = false;
+        } else {
+            available = true;
+        }
         return available;
     }
 }

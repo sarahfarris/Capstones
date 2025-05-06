@@ -8,11 +8,12 @@ public static void main(String[] args){
     Room room2 = new Room(2, 249,true, true, false);
     Room room3 = new Room(3, 299, true, true, false);
 
-    Employee frontDesk1 = new Employee(20, 40, 5);
-    Employee housekeepingStaff1 = new Employee(25, 40, 10);
+    Employee frontDesk1 = new Employee(20, 40, 20);
+    Employee housekeepingStaff1 = new Employee(25, 40, 25);
 
     Reservation sarahsVacation = new Reservation(2, "king", 139, true, 0);
     System.out.println(sarahsVacation.getReservationTotalPrice());
+    System.out.println(room1.isAvailable());
 }
 
 
