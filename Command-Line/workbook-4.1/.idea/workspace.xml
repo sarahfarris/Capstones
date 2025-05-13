@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="23c4f99a-26da-4292-882d-00400a2693e7" name="Changes" comment="&quot;updating file organization&quot;">
+      <change afterPath="$PROJECT_DIR$/../workbook-2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../LearnToCode_Capstones/Capstone-1/LedgerApp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../git-it-website" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../workshop_1/Car_Rental" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../workshop_1/Demo-4-16" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../workshop_1/Demo_Strings_Loops" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../workshop_1/financial-calculators" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../workshop_1/workshops" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../workbook-1" beforeDir="false" afterPath="$PROJECT_DIR$/../workbook-1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/google-java-format.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CalculatorTest.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/../.." value="capstone" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "git-widget-placeholder": "Rebasing main"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&quot;updating file organization&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;updating file organization&quot;" />
+  </component>
+</project>
