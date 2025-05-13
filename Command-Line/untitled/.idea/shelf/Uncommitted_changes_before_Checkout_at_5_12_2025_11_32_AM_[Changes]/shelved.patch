@@ -1,0 +1,585 @@
+Index: ../workbook-4/workbook-4.1/out/production/workbook-4/.idea/workspace.xml
+===================================================================
+diff --git a/../workbook-4/workbook-4.1/out/production/workbook-4/.idea/workspace.xml b/../workbook-4/workbook-4.1/out/production/workbook-4/.idea/workspace.xml
+deleted file mode 100644
+--- a/../workbook-4/workbook-4.1/out/production/workbook-4/.idea/workspace.xml	(revision c12ce1f5bc5a8d4e512ece700c47007a37cd2a4d)
++++ /dev/null	(revision c12ce1f5bc5a8d4e512ece700c47007a37cd2a4d)
+@@ -1,102 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="AutoImportSettings">
+-    <option name="autoReloadType" value="SELECTIVE" />
+-  </component>
+-  <component name="ChangeListManager">
+-    <list default="true" id="c592cbf2-523a-425e-ad15-c75444e690ef" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/Hotel/Employee.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/Match.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/Player.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/Round.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/Soccer_Tournament.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/Team.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Employee.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Hotel_Operations.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel/Hotel_Operations.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Main_Demo_5_5.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel/Main_Demo_5_5.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel/Reservation.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel/Room.java" afterDir="false" />
+-    </list>
+-    <option name="SHOW_DIALOG" value="false" />
+-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+-    <option name="LAST_RESOLUTION" value="IGNORE" />
+-  </component>
+-  <component name="FileTemplateManagerImpl">
+-    <option name="RECENT_TEMPLATES">
+-      <list>
+-        <option value="Class" />
+-      </list>
+-    </option>
+-  </component>
+-  <component name="Git.Settings">
+-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+-  </component>
+-  <component name="GitHubPullRequestSearchHistory">{
+-  &quot;lastFilter&quot;: {
+-    &quot;state&quot;: &quot;OPEN&quot;,
+-    &quot;assignee&quot;: &quot;sarahfarris&quot;
+-  }
+-}</component>
+-  <component name="GithubPullRequestsUISettings">{
+-  &quot;selectedUrlAndAccountId&quot;: {
+-    &quot;url&quot;: &quot;https://github.com/sarahfarris/Capstones.git&quot;,
+-    &quot;accountId&quot;: &quot;090db2c4-14c2-408a-9ca8-4b17e359682a&quot;
+-  }
+-}</component>
+-  <component name="ProjectColorInfo">{
+-  &quot;associatedIndex&quot;: 5
+-}</component>
+-  <component name="ProjectId" id="2wgQcxXEMM0RHWPZoFnqfiBIoHo" />
+-  <component name="ProjectViewState">
+-    <option name="hideEmptyMiddlePackages" value="true" />
+-    <option name="showLibraryContents" value="true" />
+-  </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+-    "Application.Hotel_Operations.executor": "Run",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "RunOnceActivity.git.unshallow": "true",
+-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+-    "git-widget-placeholder": "main",
+-    "ignore.virus.scanning.warn.message": "true",
+-    "kotlin-language-version-configured": "true",
+-    "settings.editor.selected.configurable": "preferences.lookFeel"
+-  }
+-}]]></component>
+-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+-  <component name="TaskManager">
+-    <task active="true" id="Default" summary="Default task">
+-      <changelist id="c592cbf2-523a-425e-ad15-c75444e690ef" name="Changes" comment="" />
+-      <created>1746460825000</created>
+-      <option name="number" value="Default" />
+-      <option name="presentableId" value="Default" />
+-      <updated>1746460825000</updated>
+-    </task>
+-    <servers />
+-  </component>
+-  <component name="Vcs.Log.Tabs.Properties">
+-    <option name="TAB_STATES">
+-      <map>
+-        <entry key="MAIN">
+-          <value>
+-            <State />
+-          </value>
+-        </entry>
+-      </map>
+-    </option>
+-  </component>
+-  <component name="XDebuggerManager">
+-    <breakpoint-manager>
+-      <breakpoints>
+-        <breakpoint enabled="true" type="java-exception">
+-          <properties class="java.lang.NullPointerException" package="java.lang" />
+-          <option name="timeStamp" value="1" />
+-        </breakpoint>
+-      </breakpoints>
+-    </breakpoint-manager>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: ../workbook-4/.idea/google-java-format.xml
+===================================================================
+diff --git a/../workbook-4/.idea/google-java-format.xml b/../workbook-4/.idea/google-java-format.xml
+deleted file mode 100644
+--- a/../workbook-4/.idea/google-java-format.xml	(revision c12ce1f5bc5a8d4e512ece700c47007a37cd2a4d)
++++ /dev/null	(revision c12ce1f5bc5a8d4e512ece700c47007a37cd2a4d)
+@@ -1,6 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="GoogleJavaFormatSettings">
+-    <option name="enabled" value="false" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: ../workbook-4/.idea/vcs.xml
+===================================================================
+diff --git a/../workbook-4/.idea/vcs.xml b/../workbook-4/.idea/vcs.xml
+deleted file mode 100644
+--- a/../workbook-4/.idea/vcs.xml	(revision c12ce1f5bc5a8d4e512ece700c47007a37cd2a4d)
++++ /dev/null	(revision c12ce1f5bc5a8d4e512ece700c47007a37cd2a4d)
+@@ -1,6 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="VcsDirectoryMappings">
+-    <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: ../workbook-4/workbook-4.1/out/production/workbook-4/workbook-4.iml
+===================================================================
+diff --git a/../workbook-4/workbook-4.1/out/production/workbook-4/workbook-4.iml b/../workbook-4/workbook-4.1/out/production/workbook-4/workbook-4.iml
+deleted file mode 100644
+--- a/../workbook-4/workbook-4.1/out/production/workbook-4/workbook-4.iml	(revision c12ce1f5bc5a8d4e512ece700c47007a37cd2a4d)
++++ /dev/null	(revision c12ce1f5bc5a8d4e512ece700c47007a37cd2a4d)
+@@ -1,11 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module type="WEB_MODULE" version="4">
+-  <component name="NewModuleRootManager" inherit-compiler-output="true">
+-    <exclude-output />
+-    <content url="file://$MODULE_DIR$">
+-      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+-    </content>
+-    <orderEntry type="inheritedJdk" />
+-    <orderEntry type="sourceFolder" forTests="false" />
+-  </component>
+-</module>
+\ No newline at end of file
+Index: ../workbook-4/.idea/workspace.xml
+===================================================================
+diff --git a/../workbook-4/.idea/workspace.xml b/../workbook-4/.idea/workspace.xml
+deleted file mode 100644
+--- a/../workbook-4/.idea/workspace.xml	(revision c12ce1f5bc5a8d4e512ece700c47007a37cd2a4d)
++++ /dev/null	(revision c12ce1f5bc5a8d4e512ece700c47007a37cd2a4d)
+@@ -1,125 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="AutoImportSettings">
+-    <option name="autoReloadType" value="SELECTIVE" />
+-  </component>
+-  <component name="ChangeListManager">
+-    <list default="true" id="c592cbf2-523a-425e-ad15-c75444e690ef" name="Changes" comment="">
+-      <change beforePath="$PROJECT_DIR$/../workbook-4.1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../workbook-4.1/.idea/vcs.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../workbook-4.1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../workbook-4.1/.idea/workspace.xml" afterDir="false" />
+-    </list>
+-    <option name="SHOW_DIALOG" value="false" />
+-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+-    <option name="LAST_RESOLUTION" value="IGNORE" />
+-  </component>
+-  <component name="FileTemplateManagerImpl">
+-    <option name="RECENT_TEMPLATES">
+-      <list>
+-        <option value="Class" />
+-        <option value="JUnit5 Test Class" />
+-      </list>
+-    </option>
+-  </component>
+-  <component name="Git.Settings">
+-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+-  </component>
+-  <component name="GitHubPullRequestSearchHistory">{
+-  &quot;lastFilter&quot;: {
+-    &quot;state&quot;: &quot;OPEN&quot;,
+-    &quot;assignee&quot;: &quot;sarahfarris&quot;
+-  }
+-}</component>
+-  <component name="GithubPullRequestsUISettings">{
+-  &quot;selectedUrlAndAccountId&quot;: {
+-    &quot;url&quot;: &quot;https://github.com/sarahfarris/Capstones.git&quot;,
+-    &quot;accountId&quot;: &quot;090db2c4-14c2-408a-9ca8-4b17e359682a&quot;
+-  }
+-}</component>
+-  <component name="ProjectColorInfo">{
+-  &quot;associatedIndex&quot;: 5
+-}</component>
+-  <component name="ProjectId" id="2wgQcxXEMM0RHWPZoFnqfiBIoHo" />
+-  <component name="ProjectViewState">
+-    <option name="hideEmptyMiddlePackages" value="true" />
+-    <option name="showLibraryContents" value="true" />
+-  </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+-    &quot;Application.Hotel_Operations.executor&quot;: &quot;Run&quot;,
+-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+-    &quot;Application.Unnamed.executor&quot;: &quot;Run&quot;,
+-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+-    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+-    &quot;git-widget-placeholder&quot;: &quot;capstone&quot;,
+-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+-    &quot;last_opened_file_path&quot;: &quot;C:/pluralsight/Command-Line/workbook-4.1&quot;,
+-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+-  }
+-}</component>
+-  <component name="RecentsManager">
+-    <key name="MoveFile.RECENT_KEYS">
+-      <recent name="C:\pluralsight\Command-Line\workbook-4\Hotel" />
+-    </key>
+-    <key name="CreateTestDialog.Recents.Supers">
+-      <recent name="" />
+-    </key>
+-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+-      <recent name="Demo_5_7" />
+-    </key>
+-    <key name="CreateTestDialog.RecentsKey">
+-      <recent name="Unit_Testing" />
+-    </key>
+-  </component>
+-  <component name="RunManager">
+-    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+-      <option name="MAIN_CLASS_NAME" value="Main" />
+-      <module name="workbook-4" />
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+-  </component>
+-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+-  <component name="TaskManager">
+-    <task active="true" id="Default" summary="Default task">
+-      <changelist id="c592cbf2-523a-425e-ad15-c75444e690ef" name="Changes" comment="" />
+-      <created>1746460825000</created>
+-      <option name="number" value="Default" />
+-      <option name="presentableId" value="Default" />
+-      <updated>1746460825000</updated>
+-    </task>
+-    <servers />
+-  </component>
+-  <component name="Vcs.Log.Tabs.Properties">
+-    <option name="TAB_STATES">
+-      <map>
+-        <entry key="MAIN">
+-          <value>
+-            <State />
+-          </value>
+-        </entry>
+-      </map>
+-    </option>
+-  </component>
+-  <component name="XDebuggerManager">
+-    <breakpoint-manager>
+-      <breakpoints>
+-        <breakpoint enabled="true" type="java-exception">
+-          <properties class="java.lang.NullPointerException" package="java.lang" />
+-          <option name="timeStamp" value="1" />
+-        </breakpoint>
+-      </breakpoints>
+-    </breakpoint-manager>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: ../../My_Own_Project_Practice/untitled/src/main/java/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../../My_Own_Project_Practice/untitled/src/main/java/Main.java b/../../My_Own_Project_Practice/untitled/src/main/java/Main.java
+new file mode 100644
+--- /dev/null	(date 1747009521176)
++++ b/../../My_Own_Project_Practice/untitled/src/main/java/Main.java	(date 1747009521176)
+@@ -0,0 +1,5 @@
++public class Main {
++    public static void main(String[] args){
++
++    }
++}
+Index: ../workbook-4.1/workbook-4/workbook-4.1/out/production/workbook-4/workbook-4.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../workbook-4.1/workbook-4/workbook-4.1/out/production/workbook-4/workbook-4.iml b/../workbook-4.1/workbook-4/workbook-4.1/out/production/workbook-4/workbook-4.iml
+new file mode 100644
+--- /dev/null	(date 1746478948312)
++++ b/../workbook-4.1/workbook-4/workbook-4.1/out/production/workbook-4/workbook-4.iml	(date 1746478948312)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="WEB_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: ../../My_Own_Project_Practice/untitled/src/main/java/Product.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../../My_Own_Project_Practice/untitled/src/main/java/Product.java b/../../My_Own_Project_Practice/untitled/src/main/java/Product.java
+new file mode 100644
+--- /dev/null	(date 1747012699794)
++++ b/../../My_Own_Project_Practice/untitled/src/main/java/Product.java	(date 1747012699794)
+@@ -0,0 +1,58 @@
++import java.io.*;
++
++class Product {
++  String name;
++  double price;
++  int quantity;
++
++  public Product(String name, double price, int quantity) {
++    this.name = name;
++    this.price = price;
++    this.quantity = quantity;
++  }
++
++  public Product(String name, double price) {
++    this.name = name;
++    this.price = price;
++    this.quantity = 0;
++  }
++
++  public Product(String name) {
++    this.name = name;
++    String defaultProduct;
++    defaultProduct = name;
++    this.price = 0;
++    this.quantity = 0;
++  }
++
++  public void saveToFile(String fileName) throws IOException {
++    FileWriter fr;
++    try {
++      fr = new FileWriter(fileName);
++    } catch (IOException e) {
++      throw new RuntimeException(e);
++    }
++    Product productA = new Product("Product A", 19.99, 10);
++    // what if I made this user input?
++    fr.close();
++  }
++
++  public static Product readFromFile(String fileName) throws FileNotFoundException {
++    try {
++      BufferedReader br = new BufferedReader(new FileReader(fileName));
++      String line = br.readLine(); // this is the key that reads data from the file
++      if (line != null) {
++        String [] parts = line.split(",");
++        String name = parts[0];
++        double price = Double.parseDouble(parts[1]);
++        int quantity = Integer.parseInt(parts[2]);
++        return new Product(name, price, quantity);  //creates the product object
++      } else {
++        System.out.println("Invalid format: " + line);
++      }
++    } catch (IOException e) {
++      throw new RuntimeException(e);
++    }
++    return null;
++  }
++}
+Index: ../../My_Own_Project_Practice/untitled/.idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../../My_Own_Project_Practice/untitled/.idea/.gitignore b/../../My_Own_Project_Practice/untitled/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1746940806499)
++++ b/../../My_Own_Project_Practice/untitled/.idea/.gitignore	(date 1746940806499)
+@@ -0,0 +1,3 @@
++# Default ignored files
++/shelf/
++/workspace.xml
+Index: ../../My_Own_Project_Practice/untitled/.idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../../My_Own_Project_Practice/untitled/.idea/misc.xml b/../../My_Own_Project_Practice/untitled/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1746940828357)
++++ b/../../My_Own_Project_Practice/untitled/.idea/misc.xml	(date 1746940828357)
+@@ -0,0 +1,14 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ExternalStorageConfigurationManager" enabled="true" />
++  <component name="MavenProjectsManager">
++    <option name="originalFiles">
++      <list>
++        <option value="$PROJECT_DIR$/pom.xml" />
++      </list>
++    </option>
++  </component>
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_24" default="true" project-jdk-name="openjdk-24" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../../My_Own_Project_Practice/untitled/.idea/google-java-format.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../../My_Own_Project_Practice/untitled/.idea/google-java-format.xml b/../../My_Own_Project_Practice/untitled/.idea/google-java-format.xml
+new file mode 100644
+--- /dev/null	(date 1746941166586)
++++ b/../../My_Own_Project_Practice/untitled/.idea/google-java-format.xml	(date 1746941166586)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="GoogleJavaFormatSettings">
++    <option name="enabled" value="true" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../../My_Own_Project_Practice/untitled/.idea/encodings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../../My_Own_Project_Practice/untitled/.idea/encodings.xml b/../../My_Own_Project_Practice/untitled/.idea/encodings.xml
+new file mode 100644
+--- /dev/null	(date 1746940828364)
++++ b/../../My_Own_Project_Practice/untitled/.idea/encodings.xml	(date 1746940828364)
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Encoding">
++    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
++    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../../My_Own_Project_Practice/untitled/.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../../My_Own_Project_Practice/untitled/.idea/vcs.xml b/../../My_Own_Project_Practice/untitled/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1746940828388)
++++ b/../../My_Own_Project_Practice/untitled/.idea/vcs.xml	(date 1746940828388)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../Command-line/workbook-4.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../Command-line/workbook-4.iml b/../Command-line/workbook-4.iml
+new file mode 100644
+--- /dev/null	(date 1746478948312)
++++ b/../Command-line/workbook-4.iml	(date 1746478948312)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="WEB_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: ../workbook-4.1/.idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"0e3e7e02-a5b1-46b7-a442-54d0c977a4e3\" name=\"Changes\" comment=\"&quot;updating file organization&quot;\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n        <option value=\"JUnit5 Test Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$/../..\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;sarahfarris&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/sarahfarris/Capstones.git&quot;,\r\n    &quot;accountId&quot;: &quot;090db2c4-14c2-408a-9ca8-4b17e359682a&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 7\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2wp3JXxtg7xPJHrKVhxwxY5Z2YR\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"ASKED_SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"JUnit.CalculatorTest.executor\": \"Run\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary\": \"JUnit5\",\r\n    \"com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5\": \"\",\r\n    \"git-widget-placeholder\": \"capstone\",\r\n    \"ignore.virus.scanning.warn.message\": \"true\",\r\n    \"kotlin-language-version-configured\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CreateTestDialog.Recents.Supers\">\r\n      <recent name=\"\" />\r\n    </key>\r\n    <key name=\"CreateTestDialog.RecentsKey\">\r\n      <recent name=\"\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"0e3e7e02-a5b1-46b7-a442-54d0c977a4e3\" name=\"Changes\" comment=\"\" />\r\n      <created>1746724620693</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1746724620693</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"&quot;updating file organization&quot;\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"&quot;updating file organization&quot;\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../workbook-4.1/.idea/workspace.xml b/../workbook-4.1/.idea/workspace.xml
+--- a/../workbook-4.1/.idea/workspace.xml	(revision c12ce1f5bc5a8d4e512ece700c47007a37cd2a4d)
++++ b/../workbook-4.1/.idea/workspace.xml	(date 1746729422136)
+@@ -4,7 +4,14 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="0e3e7e02-a5b1-46b7-a442-54d0c977a4e3" name="Changes" comment="&quot;updating file organization&quot;" />
++    <list default="true" id="0e3e7e02-a5b1-46b7-a442-54d0c977a4e3" name="Changes" comment="&quot;updating file organization&quot;">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/../workbook-4/.idea/google-java-format.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/../workbook-4/.idea/vcs.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/../workbook-4/.idea/workspace.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/../workbook-4/workbook-4.1/out/production/workbook-4/.idea/workspace.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/../workbook-4/workbook-4.1/out/production/workbook-4/workbook-4.iml" beforeDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -52,7 +59,8 @@
+     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+     "git-widget-placeholder": "capstone",
+     "ignore.virus.scanning.warn.message": "true",
+-    "kotlin-language-version-configured": "true"
++    "kotlin-language-version-configured": "true",
++    "last_opened_file_path": "C:/pluralsight/Command-Line/workbook-4.1"
+   }
+ }]]></component>
+   <component name="RecentsManager">
+@@ -62,6 +70,19 @@
+     <key name="CreateTestDialog.RecentsKey">
+       <recent name="" />
+     </key>
++  </component>
++  <component name="RunManager">
++    <configuration default="true" type="JetRunConfigurationType">
++      <module name="workbook-4.1" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
++      <module name="workbook-4.1" />
++      <option name="filePath" />
++      <method v="2" />
++    </configuration>
+   </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+Index: ../Command-line/out/production/workbook-4/workbook-4.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../Command-line/out/production/workbook-4/workbook-4.iml b/../Command-line/out/production/workbook-4/workbook-4.iml
+new file mode 100644
+--- /dev/null	(date 1746478948312)
++++ b/../Command-line/out/production/workbook-4/workbook-4.iml	(date 1746478948312)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="WEB_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
